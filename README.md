@@ -48,11 +48,10 @@ for i in range(1,15):
     knn = KNeighborsClassifier(n_neighbors=i)
     knn.fit(X_train, y_train)
     pred_i = knn.predict(X_test)
-    error_rate.append(np.mean(pred_i != y_test))```
+    error_rate.append(np.mean(pred_i != y_test))
     
     
 #Plotting the errors
-```
 plt.plot(range(1,15),error_rate,color='blue', linestyle='dashed', marker='o', markerfacecolor='red', markersize=10)
 plt.title('Error Rate vs. K Value')
 plt.xlabel('K')
@@ -61,6 +60,6 @@ plt.ylabel('Error Rate')```
 
 And the output of above code was:
 
-
+<img width="600" alt="k" src="https://user-images.githubusercontent.com/69238621/140892870-b4760de5-f08c-4fb8-a3a0-bf8e7f8f6c1d.PNG">
 
 We select the value of K from the plot. It is that value which is lowest and after that it does nt matter if nex value rise or fall but not lower than the chosen K.
