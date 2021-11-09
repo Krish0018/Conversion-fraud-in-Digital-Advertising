@@ -41,7 +41,8 @@ Also used feature engineering as there were few features which were not that use
 Used few different algoritms for prediction and on the basis of overall performance choosed the final model.
 The one example of KNN. The code i wrote for KNN was:
 
-```# As we are uncertain about number of neighbors so will use it with as list and compare the errors
+```
+# As we are uncertain about number of neighbors so will use it with as list and compare the errors
 error_rate = []
 for i in range(1,15):
     knn = KNeighborsClassifier(n_neighbors=i)
