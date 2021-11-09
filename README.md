@@ -51,12 +51,14 @@ for i in range(1,15):
     error_rate.append(np.mean(pred_i != y_test))```
     
 
-```#Plotting the errors
+```
+#Plotting the errors
 plt.plot(range(1,15),error_rate,color='blue', linestyle='dashed', marker='o',
          markerfacecolor='red', markersize=10)
 plt.title('Error Rate vs. K Value')
 plt.xlabel('K')
-plt.ylabel('Error Rate')```
+plt.ylabel('Error Rate')
+```
 
 And the output of above code was
 
